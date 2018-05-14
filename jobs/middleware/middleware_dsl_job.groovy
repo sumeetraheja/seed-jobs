@@ -12,6 +12,6 @@ node {
          lookupStrategy: 'SEED_JOB',
          additionalClasspath: ['target/jenkins-job-0.0.1-SNAPSHOT.jar'].join('\n') 
          
-   }
-  primaryView('middleware')
+  }
+  
 }
