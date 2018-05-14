@@ -21,14 +21,14 @@ pipeline {
     //  }
       steps {
         script {
-          if (( env.BRANCH_NAME == 'master' ) || ( env.BRANCH_NAME == 'devops-private')) {
+     //     if (( env.BRANCH_NAME == 'master' ) || ( env.BRANCH_NAME == 'devops-private')) {
             // Checkout the branch.
             checkout scm
             jobDsl targets: ['jobs/*/*.groovy', 'views/*/*.groovy'].join('\n')
-          }
-          else {
-            println "Not on master or devops-private branch doing nothing."
-          }
+       //   }
+         // else {
+           // println "Not on master or devops-private branch doing nothing."
+         // }
         }
       }
     }
