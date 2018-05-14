@@ -9,8 +9,8 @@ job('middleware') {
       }  
     steps {
         dsl {
-            text(readFileFromWorkspace('jobs/devSeedJob.groovy'))
-            external('jobs/devSeedJob.groovy')
+            text(readFileFromWorkspace('jobs/middleware/devSeedJob.groovy'))
+           
             additionalClasspath('target/jenkins-job-0.0.1-SNAPSHOT.jar')
         }
     }
