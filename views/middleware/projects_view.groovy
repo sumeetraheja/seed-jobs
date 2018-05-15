@@ -3,7 +3,7 @@ listView('middleware') {
     filterBuildQueue()
     filterExecutors()
     jobs {       
-        names('build-jobs-commons','build-jobs-commons-all-env','build-jobs-dev','build-jobs-production','build-jobs-staging')
+        names('middleware-jobs-commons','middleware-jobs-commons-all-env','middleware-jobs-dev','middleware-jobs-production','middleware-jobs-staging')
     }
     columns {
         status()
