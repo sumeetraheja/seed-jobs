@@ -9,7 +9,8 @@ job('middleware') {
       }  
     steps {
         dsl {
-            text(readFileFromWorkspace('jobs/*.groovy'))
+            //text(readFileFromWorkspace('jobs/*.groovy'))
+            external('jobs/*.groovy')
            
             additionalClasspath('target/jenkins-job-0.0.1-SNAPSHOT.jar')
         }
