@@ -4,7 +4,7 @@ listView('middleware') {
     filterExecutors()
     jobs {       
         //names('middleware-jobs-commons','middleware-jobs-commons-all-env','middleware-jobs-dev','middleware-jobs-production','middleware-jobs-staging')
-        regex('middleware-jobs')
+        regex('middleware-jobs*')
     }
     columns {
         status()
