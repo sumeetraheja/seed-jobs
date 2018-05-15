@@ -2,7 +2,7 @@ job('middleware') {
    scm {
         git {
             remote {
-                github('https://github.com/sumeetraheja/seed-jobs.git')
+                url('https://github.com/sumeetraheja/seed-jobs.git')
               }
            
            }
