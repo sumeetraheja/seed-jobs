@@ -2,14 +2,14 @@ job('middleware') {
    scm {
         git {
             remote {
-                url('https://github.com/sumeetraheja/seed-jobs.git')
+                url('https://github.com/sumeetraheja/jenkins.git')
               }
            
            }
       }  
     steps {
         dsl {
-           // text(readFileFromWorkspace('jobs/middleware/devSeedJob.groovy'))
+            text(readFileFromWorkspace('jobs/*.groovy'))
            
             additionalClasspath('target/jenkins-job-0.0.1-SNAPSHOT.jar')
         }
